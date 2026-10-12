@@ -8,16 +8,16 @@ class AnswerButton extends StatelessWidget {
   });
 
   final String answerText;
-  final void Function() onTap;
+  final void Function() onTap; // = void Function()
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: onTap,
       style: ElevatedButton.styleFrom(
-        backgroundColor: const Color(0xFF3B3E9F),
-        foregroundColor: Colors.white,
-        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 24),
+        backgroundColor: const Color(0xFF3B3E9F), // jednotné pozadie
+        foregroundColor: Colors.white, // farba textu/ikony
+        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 40),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
       ),
       child: Text(answerText, textAlign: TextAlign.center),
